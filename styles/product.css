@@ -1,0 +1,22 @@
+.product {
+  background: url(../images/product.png) 50% 0 no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 150px;
+}
+
+  .product--tall {
+    background-image: url(../images/product-tall.png);
+
+    /* height: calc($height*2 + $gap);
+    grid-row: span 2; */
+  }
+
+  .product--big {
+    background-image: url(../images/product-big.png);
+
+    /* height: calc($height*2 + $gap);
+    width: calc($width*2 + $gap);
+    grid-row: span 2;
+    grid-column: span 2; */
+  }

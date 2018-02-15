@@ -1,0 +1,55 @@
+@import 'variables.pcss';
+
+.products {
+  max-width: 1020px;
+  margin: 10px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: url(../images/product.png) 50% 0 no-repeat;
+  background-size: cover;
+  height: $height;
+  width: $width;
+
+  margin: 0 10px 20px;
+
+  &--tall {
+    background-image: url(../images/product-tall.png);
+  }
+
+  &--big {
+    background-image: url(../images/product-big.png);
+  }
+}
+
+@supports ( grid-auto-flow:dense ) {
+
+  .products {
+    max-width: 1000px;
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: repeat(6, 150px);
+    grid-auto-flow: dense;
+  }
+
+  .product {
+
+    margin: auto;
+
+    &--tall {
+      height: calc($height*2 + $gap);
+      grid-row: span 2;
+    }
+
+    &--big {
+      height: calc($height*2 + $gap);
+      width: calc($width*2 + $gap);
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  }
+
+}

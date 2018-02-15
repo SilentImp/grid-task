@@ -1,0 +1,38 @@
+{
+  "name": "grid-task",
+  "version": "1.0.0",
+  "description": "Source code for grid master class",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm start",
+    "start": "postcss ./source/* -d ./styles --ext css -m --verbose --config postcss.config.js",
+    "watch": "postcss ./source/* -d ./styles --ext css -m --verbose --config postcss.config.js --watch",
+    "lint": "stylelint './source/*.pcss' --fix --config .stylelintrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentImp/grid-task.git"
+  },
+  "keywords": [
+    "grid",
+    "masterclass"
+  ],
+  "author": "Anton Nemtsev <silentimp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilentImp/grid-task/issues"
+  },
+  "homepage": "https://github.com/SilentImp/grid-task#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "postcss": "^6.0.17",
+    "postcss-color-function": "^4.0.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "stylelint": "^8.4.0",
+    "stylelint-scss": "^2.3.0"
+  }
+}

@@ -1,0 +1,21 @@
+@import 'variables.pcss';
+
+.banner {
+  background: url(../images/banner.png) 50% 50% no-repeat;
+  background-size: 90% auto;
+  height: $height;
+  width: $width;
+
+  /* grid-row-start: 3;
+  grid-column-start: 2; */
+}
+
+.banner--wide {
+  background-image: url(../images/banner-wide.png);
+  background-size: cover;
+  height: $height;
+  width: calc($width*6 + $gap*5);
+
+  /* grid-row-start: 4;
+  grid-column: span 6; */
+}
