@@ -8,15 +8,15 @@
   .product--tall {
     background-image: url(../images/product-tall.png);
 
-    /* height: calc($height*2 + $gap);
-    grid-row: span 2; */
+    height: calc(240px*2 + 20px);
+    grid-row: span 2;
   }
 
   .product--big {
     background-image: url(../images/product-big.png);
 
-    /* height: calc($height*2 + $gap);
-    width: calc($width*2 + $gap);
+    height: calc(240px*2 + 20px);
+    width: calc(150px*2 + 20px);
     grid-row: span 2;
-    grid-column: span 2; */
+    grid-column: span 2;
   }

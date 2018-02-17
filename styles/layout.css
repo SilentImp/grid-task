@@ -10,6 +10,6 @@
   .content .banners,
   .content .products {
 
-    /* display: contents;
-    margin: auto; */
+    display: contents;
+    margin: auto;
   }
