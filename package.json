@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "postcss": "^6.0.17",
+    "postcss-cli": "^5.0.0",
     "postcss-color-function": "^4.0.1",
     "postcss-conditionals": "^2.1.0",
     "postcss-import": "^11.1.0",
